@@ -1,0 +1,18 @@
+Key Features Explained
+
+
+1. Custom Hangman Drawing
+The HangmanDrawingPanel inner class uses Graphics2D for smooth, anti-aliased rendering:
+
+Gallows (brown wooden structure) is always visible
+Body parts appear progressively (head → body → arms → legs)
+Face expressions change based on game state (smile vs. X eyes)
+2. Color-Coded Feedback
+    Unguessed letters: Blue accent color
+    Correct guesses: Green background
+    Incorrect guesses: Red background
+    Low lives warning: Attempts label turns red/yellow
+3. Responsive Button States
+   Buttons have hover effects (brighten on mouse-over)
+   Disabled after being clicked
+   Color changes immediately on guess
