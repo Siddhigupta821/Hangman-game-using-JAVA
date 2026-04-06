@@ -1,0 +1,25 @@
+JFrame (HangmanGame)
+└── JPanel (mainPanel) - BorderLayout with padding
+    │
+    ├── NORTH: JPanel (titlePanel) - FlowLayout
+    │   └── JLabel "🎯 HANGMAN CHALLENGE 🎯"
+    │
+    ├── CENTER: JPanel (centerPanel) - BorderLayout
+    │   │
+    │   ├── WEST: HangmanDrawingPanel - Custom painting
+    │   │   └── Draws gallows + hangman figure
+    │   │
+    │   └── CENTER: JPanel (infoPanel) - BoxLayout (Y_AXIS)
+    │       ├── JLabel "GUESS THE WORD"
+    │       ├── JLabel (wordLabel) - Shows "_ _ _ _"
+    │       ├── JLabel (attemptsLabel) - Shows lives
+    │       └── JLabel (scoreLabel) - Shows wins/losses
+    │
+    └── SOUTH: JPanel (bottomPanel) - BorderLayout
+        │
+        ├── CENTER: JPanel (containerPanel) - GridLayout(2,1)
+        │   ├── JPanel (row1) - FlowLayout [A-M buttons]
+        │   └── JPanel (row2) - FlowLayout [N-Z buttons]
+        │
+        └── SOUTH: JPanel (controlPanel) - FlowLayout
+            └── JButton "🔄 NEW GAME"
